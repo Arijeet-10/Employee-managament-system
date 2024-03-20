@@ -31,9 +31,6 @@ Contributions are welcome! If you have any suggestions, bug reports, or feature 
 
 [MIT License](LICENSE)
 
-## Acknowledgements
-
-- Include any acknowledgements or credits to individuals or organizations whose code, libraries, or resources you've used in this project.
 
 ## Contact
 
@@ -41,4 +38,3 @@ For any inquiries or support, please contact arijeetdas999@gmail.com.
 
 ---
 
-Feel free to customize the README to better suit your project and include any additional sections or information as needed.
