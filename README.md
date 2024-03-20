@@ -36,5 +36,11 @@ Contributions are welcome! If you have any suggestions, bug reports, or feature 
 
 For any inquiries or support, please contact arijeetdas999@gmail.com.
 
+
+## Screenshots of the website
+
+![Screenshot 2024-03-19 215053](https://github.com/Arijeet0523/Employee-managament-system/assets/113160103/22538f37-e5ef-47d4-84a5-62c54d53069d)
+![Screenshot 2024-03-19 214952](https://github.com/Arijeet0523/Employee-managament-system/assets/113160103/658e9f6d-1616-4d77-b0bc-96b306444dd2)
+
 ---
 
