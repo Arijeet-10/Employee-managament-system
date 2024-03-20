@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#payroll">Payroll</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#leave">Leave</a></li>
+                <li><a href="">Uml Diagrams</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <h2>Employee Profile</h2>
+            <div class="employee-profile">
+                <table id="employee-table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Employee ID</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Position</th>
+                        <th>Action</th>
+                    </tr>
+                </table>
+            </div>
+            <button onclick="addEmployee()">Add Employee</button>
+        </section>
+
+            <section id="attendance">
+                <h2>Attendance</h2>
+                <div class="attendance">
+                    <table id="attendance-table">
+                        <tr>
+                            <th>Name</th>
+                            <th>Employee ID</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section id="payroll">
+                <h2>Payroll Management</h2>
+                <div class="payroll-list">
+                    <table id="payroll-table">
+                        <tr>
+                            <th>Name</th>
+                            <th>Employee ID</th>
+                            <th>Department</th>
+                            <th>Position</th>
+                            <th>Salary</th>
+                            <th>Set Salary</th>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section id="performance">
+                <h2>Performance Evaluation</h2>
+                <div class="performance-list">
+                    <table id="performance-table">
+                        <tr>
+                            <th>Name</th>
+                            <th>Employee ID</th>
+                            <th>Performance</th>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section id="leave">
+                <h2>Leave Management</h2>
+                <div class="leave-form">
+                    <form id="leave-form">
+                        <label for="employee-name">Employee Name:</label>
+                        <input type="text" id="employee-name" name="employee-name" required><br>
+                        
+                        <label for="leave-type">Leave Type:</label>
+                        <select id="leave-type" name="leave-type">
+                            <option value="sick">Sick Leave</option>
+                            <option value="vacation">Vacation Leave</option>
+                            <option value="personal">Personal Leave</option>
+                        </select><br>
+                        
+                        <label for="start-date">Start Date:</label>
+                        <input type="date" id="start-date" name="start-date" required><br>
+                        
+                        <label for="end-date">End Date:</label>
+                        <input type="date" id="end-date" name="end-date" required><br>
+                        
+                        <button type="submit">Submit Leave Request</button>
+                    </form>
+                </div>
+            </section>
+    </main>
+
+    <div id="edit-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="cancelAddEmployee()">&times;</span>
+            <label for="newName">Name:</label>
+            <input type="text" id="newName"><br>
+            <label for="newId">Employee ID:</label>
+            <input type="text" id="newId"><br>
+            <label for="newEmail">Email:</label>
+            <input type="text" id="newEmail"><br>
+            <label for="newDepartment">Department:</label>
+            <input type="text" id="newDepartment"><br>
+            <label for="newPosition">Position:</label>
+            <input type="text" id="newPosition"><br>
+            <button id="saveButton" onclick="saveNewEmployee()">Save</button>
+            <button onclick="cancelAddEmployee()">Cancel</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Employee Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/script.js" defer></script>
+</body>
+</html>
