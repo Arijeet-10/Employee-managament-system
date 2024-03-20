@@ -1,6 +1,6 @@
 # Employee Management System  
 
-## link:- https://arijeet0523.github.io/Employee-managament-system/
+## website-link:- https://arijeet0523.github.io/Employee-managament-system/
 
 ## Description
 
